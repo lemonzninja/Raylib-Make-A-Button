@@ -1,7 +1,7 @@
 #include "../src/raylib.h"
 
 /*
-    A program to draw a button in the scenter of the screen
+    A program to draw a button in the center of the screen
     the button will be a rectangle with text inside
     the button will change color when the mouse is over it
     when the button is clicked, Screen coolor will change
