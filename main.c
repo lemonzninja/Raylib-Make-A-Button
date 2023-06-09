@@ -14,7 +14,7 @@ typedef struct Button
     Color color;
 } Button;
 
-Button button_0 = {0};
+Button button_0 = {0}; // The button
 
 // bool to check if the button is clicked
 bool button_0_clicked = false;
@@ -22,6 +22,13 @@ bool button_0_clicked = false;
 // Function to initialize the button
 void init_button(Button *button, Rectangle rect, Color color)
 {
+    /*
+        This function will initialize the button
+        button: the button to initialize
+        rect: the button rectangle
+        color: the button color
+    */
+
     button->rect = rect;
     button->color = color;
 }
@@ -29,6 +36,11 @@ void init_button(Button *button, Rectangle rect, Color color)
 // Function to check if the mouse is over the button
 bool is_mouse_over_button(Button button)
 {
+    /*
+        This function will check if the mouse is over the button
+        button: the button to check
+    */
+
     return CheckCollisionPointRec(GetMousePosition(), button.rect);
 }
 
@@ -74,6 +86,7 @@ static void UpdateDrawFrame(void)
 {
     // Update
     //----------------------------------------------------------------------------------
+
     // Check if the mouse is over the button
     if (is_mouse_over_button(button_0))
     {
@@ -89,7 +102,7 @@ static void UpdateDrawFrame(void)
     {
         button_0_clicked = true;
     }
- 
+
     // Draw
     //----------------------------------------------------------------------------------
     BeginDrawing();
