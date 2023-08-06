@@ -1,4 +1,4 @@
-#include "../src/raylib.h"
+#include "../../src/raylib.h"
 
 /*
     A program to draw a button in the center of the screen
